@@ -24,6 +24,12 @@ This document provides step-by-step instructions for setting up the Bootcamp-Ker
    composer install
    ```
 
+    and then do
+
+    ```bash
+   php artisan key:generate
+   ```
+
 3. **Publish the Laravel Modules Service Provider**
 
    ```bash
