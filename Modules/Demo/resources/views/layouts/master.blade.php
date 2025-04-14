@@ -22,8 +22,8 @@
     </head>
 
     <body>
-        {{ $slot }}
-
+        @yield('content')
         {{-- Vite JS --}}
         {{-- {{ module_vite('build-demo', 'resources/assets/js/app.js') }} --}}
     </body>
+</html>

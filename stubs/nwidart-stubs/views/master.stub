@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        {{ $slot }}
+        @yield('content')
 
         {{-- Vite JS --}}
         {{-- {{ module_vite('build-$LOWER_NAME$', 'resources/assets/js/app.js') }} --}}
