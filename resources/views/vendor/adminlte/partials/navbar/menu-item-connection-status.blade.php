@@ -1,6 +1,6 @@
 <li class="nav-item">
-    <div class="nav-link">
-        <span id="connection-status-badge" class="badge badge-success">Online</span>
+    <div class="nav-link" style="display: flex; align-items: center; justify-content: center;">
+        <span id="connection-status-badge" class="badge badge-success badge-md" style="font-size: 1.2rem; padding: 8px 12px;">Online</span>
     </div>
 </li>
 
@@ -11,10 +11,10 @@
         // Function to update connection status
         function updateConnectionStatus() {
             if (navigator.onLine) {
-                statusBadge.className = 'badge badge-success';
+                statusBadge.className = 'badge badge-success badge-md';
                 statusBadge.textContent = 'Online';
             } else {
-                statusBadge.className = 'badge badge-danger';
+                statusBadge.className = 'badge badge-danger badge-md';
                 statusBadge.textContent = 'Offline';
             }
         }
