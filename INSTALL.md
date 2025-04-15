@@ -14,8 +14,8 @@ This document provides step-by-step instructions for setting up the Bootcamp-Ker
 1. **Clone the repository**
 
    ```bash
-   git clone [repository-url]
-   cd Bootcamp-KerajinanTangan
+   git clone https://github.com/neekaru/kreasikita
+   cd kreasikita
    ```
 
 2. **Install dependencies**
@@ -24,61 +24,32 @@ This document provides step-by-step instructions for setting up the Bootcamp-Ker
    composer install
    ```
 
-    and then do
-
-    ```bash
-   php artisan key:generate
-   ```
-
-3. **Publish the Laravel Modules Service Provider**
-
-   ```bash
-   php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"
-   ```
-
-4. **Dump the autoload files**
+3. **Dump the autoload files**
 
    ```bash
    composer dump-autoload
    ```
 
-5. **Publish the Permission Service Provider**
-
-   ```bash
-   php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
-   ```
-
-6. **Clear optimization caches**
-
-   ```bash
-   php artisan optimize:clear
-   ```
-
-7. **Set up environment file**
+4. **Set up environment file**
 
    ```bash
    cp .env.example .env
    php artisan key:generate
    ```
 
-8. **Configure your database in the .env file**
-
-   ```
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=your_database_name
-   DB_USERNAME=your_database_username
-   DB_PASSWORD=your_database_password
-   ```
-
-9. **Run database migrations**
+5. **Run database migrations**
 
    ```bash
    php artisan migrate
    ```
 
-10. **Start the development server**
+6. **Do a Storage Link**
+
+   ```bash
+   php artisan storage:link
+   ```
+
+7. **Start the development server**
 
     ```bash
     php artisan serve
