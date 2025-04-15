@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Kreasi</b>Kita',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -308,6 +308,12 @@ return [
         [
             'type' => 'fullscreen-widget',
             'topnav_right' => true,
+            'icon' => 'fas fa-expand-arrows-alt',
+        ],
+        [
+            'type' => 'custom-view',
+            'view' => 'adminlte::partials.navbar.menu-item-connection-status',
+            'topnav_right' => true,
         ],
 
         // Sidebar items:
@@ -319,6 +325,11 @@ return [
             'text' => 'Home (Demo)',
             'url' => '/',
             'icon' => 'fas fa-fw fa-home',
+        ],
+        [
+            'text' => 'Admin',
+            'url' => '/admin',
+            'icon' => 'fas fa-fw fa-user-shield'
         ],
         [
             'text' => 'blog',
