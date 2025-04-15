@@ -36,6 +36,9 @@
             background-color: #343a40;
             border-color: #454d55;
         }
+        .dark-mode .card-text {
+            color: #ffffff;
+        }
         .dark-mode .bg-light {
             background-color: #343a40 !important;
         }
