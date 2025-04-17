@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Admin Dashboard')
+@section('title', 'KreasiKita Admin Dashboard')
 
 @section('content_header')
     <h1>Admin Dashboard</h1>

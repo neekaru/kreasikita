@@ -13,4 +13,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    /**
+     * Display the about us page.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function about()
+    {
+        return view('about');
+    }
 }
