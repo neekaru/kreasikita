@@ -328,8 +328,15 @@ return [
         ],
         [
             'text' => 'Admin',
-            'url' => '/admin',
-            'icon' => 'fas fa-fw fa-user-shield'
+            'url' => 'admin',
+            'icon' => 'fas fa-fw fa-user-shield',
+            'active' => ['admin', 'admin/*']  // Highlight when on any admin route
+        ],
+        [
+            'text' => 'Review',
+            'url' => 'admin/reviews',  // Changed to match route
+            'icon' => 'fas fa-fw fa-comments',
+            'active' => ['admin/reviews*']  // Highlight when on review routes
         ],
         [
             'text' => 'blog',
